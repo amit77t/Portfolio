@@ -1,4 +1,4 @@
-/* Global Styles */
+/* ✅ Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,21 +9,21 @@ body {
   background: #f5f7fa;
   color: #333;
   line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
 }
 h1, h2, h3 {
-  color: #222;
   margin-bottom: 1rem;
 }
 section {
   padding: 4rem 2rem;
 }
 
-/* Navbar */
+/* ✅ Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   background: #1a1a1a;
   color: #fff;
   position: sticky;
@@ -44,7 +44,7 @@ section {
   color: #00aaff;
 }
 
-/* Hero */
+/* ✅ Hero Section */
 .hero {
   text-align: center;
   padding: 6rem 2rem;
@@ -56,9 +56,12 @@ section {
 }
 .hero .links {
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .hero .links a {
-  margin: 0 10px;
   text-decoration: none;
   color: #fff;
   background: #222;
@@ -70,44 +73,36 @@ section {
   background: #444;
 }
 
-/* About, Experience, Achievements */
-.about, .experience, .achievements, .projects {
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
+/* ✅ Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
-.exp-card {
+
+/* ✅ Experience & Achievements */
+.exp-card, .achievements ul {
   background: #fff;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 1rem auto;
+  max-width: 800px;
   text-align: left;
 }
-.exp-card ul {
-  margin-left: 1.5rem;
-}
 
-/* Achievements */
-.achievements ul {
-  list-style: disc;
-  text-align: left;
-  max-width: 700px;
-  margin: auto;
-  padding-left: 1.2rem;
-}
-
-/* Projects */
+/* ✅ Projects */
 .project-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 .project-card {
   border: 1px solid #ddd;
   padding: 1.5rem;
   border-radius: 10px;
-  width: 280px;
   background: white;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s;
@@ -115,22 +110,8 @@ section {
 .project-card:hover {
   transform: translateY(-5px);
 }
-.project-card a {
-  display: inline-block;
-  margin-top: 10px;
-  text-decoration: none;
-  color: #0077ff;
-  font-weight: bold;
-}
 
-/* Footer */
-.footer {
-  background: #1a1a1a;
-  color: #fff;
-  padding: 1.5rem;
-  text-align: center;
-}
-
+/* ✅ Footer */
 .footer {
   background: #1a1a1a;
   color: #fff;
@@ -146,14 +127,30 @@ section {
 .footer a:hover {
   color: #ffdd57;
 }
-.social-links {
-  margin: 1rem 0;
+
+
+
+/* 📱 Responsive Media Queries */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* hide menu for mobile (later we can add hamburger) */
+  }
+  .hero {
+    padding: 4rem 1rem;
+  }
+  .exp-card, .achievements ul {
+    padding: 1rem;
+  }
 }
-.footer-copy {
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-.contact{
-  color: white;
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -44,6 +44,7 @@ import Achievements from "./components/Achievements";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import "./index.css";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Skills /> 
       <Experience />
       <Achievements />
       <Projects />

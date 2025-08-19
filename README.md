@@ -1,12 +1,43 @@
-# React + Vite
+# 🌐 Personal Portfolio  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)  
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)  
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)  
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)  
 
-Currently, two official plugins are available:
+🚀 A modern and responsive **personal portfolio website** built with **React, Vite, and CSS**, showcasing my skills, projects, and experience.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Demo:** [portfolio-blush-one-lgogp9wv72.vercel.app](https://portfolio-blush-one-lgogp9wv72.vercel.app/)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features  
+- ⚡ **Fast & Optimized** – Built with **Vite** for lightning-fast performance.  
+- 📱 **Responsive Design** – Works perfectly on mobile, tablet, and desktop.  
+- 💼 **Projects Showcase** – Highlighting my featured work.  
+- 👨‍💻 **About Section** – A short introduction about me.  
+- 📬 **Contact Form** – Easy way to connect.  
+- 🎨 **Clean Styling** – Written in maintainable **CSS**.  
+
+---
+
+## 🛠 Tech Stack  
+- **Frontend:** React (Vite)  
+- **Styling:** CSS  
+- **Hosting:** Vercel  
+
+---
+
+## 📂 Project Structure  
+```bash
+portfolio/
+│── public/         # Static assets
+│── src/
+│   ├── components/ # UI components
+│   ├── pages/      # Sections (Home, About, Projects, Contact)
+│   ├── assets/     # Images & icons
+│   ├── App.jsx     # Main App component
+│   ├── main.jsx    # Entry point
+│── package.json
+│── vite.config.js
+│── README.md
